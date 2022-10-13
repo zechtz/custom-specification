@@ -11,9 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Component;
 
-// https://github.com/emyasa/medium-articles/blob/master/java-persistence-api/generic-specification/src/main/java/com/emyasa/domain/GenericSearchSpecification.java
-// https://github.com/RafaelLeoni/generic-specifications/blob/master/src/main/java/br/com/rafaelleoni/specifications/resources/client/ClientResource.java
-
 @Component
 public class CustomSpecificationBuilder<T> {
   @Autowired private SpecificationFactory<T> specificationFactory;
